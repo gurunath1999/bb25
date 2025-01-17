@@ -3,7 +3,7 @@ import { User } from '../models/userModel'
 import bcrypt from 'bcryptjs'
 
 
-export const register=async(req:Request,res:Response)=>{
+export const register=async(req:Request,res:Response):Promise<any>=>{
 
     try {
         const {username,email,password}=req.body
