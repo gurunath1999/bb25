@@ -25,7 +25,7 @@ const hashPassword=await bcrypt.hash(password,10)
 
         return res.status(201).json({message:'data added successfully'})
     } catch (error) {
-        return res.status(401).json({message:'enter vaild data'})
+        return res.status(505).json({message:'internal server error'})
     }
 
 }
